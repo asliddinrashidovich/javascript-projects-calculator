@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="result">
+            <input type="text" readonly id="result">
+        </div>
+        <div class="buttons">
+            <button onclick="clearFunc()" class="marked" id="cleare">AC</button>
+            <button onclick="deleteFunc()" class="marked" id="delete">DE</button>
+            <button onclick="addInputValue('.')" class="marked" id="dot">.</button>
+            <button onclick="addInputValue('/')" class="marked" id="divide">/</button>
+            <button onclick="addInputValue('7')" id="seven">7</button>
+            <button onclick="addInputValue('8')" id="eight">8</button>
+            <button onclick="addInputValue('9')" id="nine">9</button>
+            <button onclick="addInputValue('*')" class="marked" id="multiply">*</button>
+            <button onclick="addInputValue('4')" id="four">4</button>
+            <button onclick="addInputValue('5')" id="five">5</button>
+            <button onclick="addInputValue('6')" id="six">6</button>
+            <button onclick="addInputValue('-')" class="marked" id="minus">-</button>
+            <button onclick="addInputValue('1')" id="one">1</button>
+            <button onclick="addInputValue('2')" id="two">2</button>
+            <button onclick="addInputValue('3')" id="three">3</button>
+            <button onclick="addInputValue('+')" class="marked" id="pilus">+</button>
+            <button onclick="addInputValue('00')" id="dublezero">00</button>
+            <button onclick="addInputValue('0')" id="zero">0</button>
+            <button onclick="getResult()" class="marked" id="equal">=</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
